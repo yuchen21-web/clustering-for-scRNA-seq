@@ -8,6 +8,12 @@ Overall architecture of the scGCRC algorithm pipeline:
 
 scGCRC first construct a relationship graph and adopt a graph attention network to extract the relationship information among cells. Then, two contrastive learning modules are conducted on the cell feature matrix with positive and negative pair cells to learn an accurate cell representation. In particular, a cell-level module maximizes the similarity of similar cells (positive pair) and minimizes the similarity of negative pairs to make cells more discriminative. A cluster-level module is used to form cell groups and perform contrastive learning to increase the probability of similar cells to be on the same group. Finally, Leiden algorithm is adopted to cluster cells based on the learned cell representation.
 
+**Note:**  
+This work was initially submitted in early 2023 and accepted in late 2025.  
+Given the extended review period, there might be similar works that appeared in the meantime.  
+While the result was competitive at the time of submission, it may be less competitive than the latest state-of-the-art methods.  
+We provide this code and paper for reference and hope it remains useful for future research.
+
 # Requirements
 
 - Clustering
